@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background-color: #0e0e0e;
+  color: white;
+  min-height: 100vh;
+}
+
+header {
+  background-color: #1a1a1a;
+  text-align: center;
+  padding: 2rem 1rem;
+  border-bottom: 1px solid #333;
+}
+
+header h1 {
+  font-size: 2.5rem;
+  margin-bottom: 0.5rem;
+}
+
+header p {
+  font-style: italic;
+  color: #ccc;
+  margin: 0.3rem 0;
+}
+
+a {
+  color: #4fc3f7;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+.pdf-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 2rem;
+  height: calc(100vh - 200px);
+}
+
+.pdf-view {
+  width: 100%;
+  max-width: 800px;
+  height: 100%;
+  border: none;
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.2);
+}
+
+nav {
+  margin-top: 1rem;
+}
+
+nav a {
+  margin: 0 1rem;
+  font-weight: bold;
+  color: #4fc3f7;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.page-content {
+  padding: 2rem;
+  text-align: center;
+}
+
+@media (max-width: 600px) {
+  nav {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.5rem;
+  }
+
+  .pdf-container {
+    padding: 1rem;
+    height: auto;
+  }
+
+  .pdf-view {
+    width: 100%;
+    height: 80vh;
+  }
+}
+
+/* Header animation */
+header {
+  animation: fadeIn 1s ease-in-out;
+}
+
+/* Nav link animations */
+nav a {
+  display: inline-block;
+  transition: transform 0.3s ease, color 0.3s ease;
+}
+
+nav a:hover {
+  transform: translateY(-2px);
+  color: #81d4fa;
+}
+
+/* Fade in animation */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-15px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+greetings {
+  font-size: xx-small;
+}
